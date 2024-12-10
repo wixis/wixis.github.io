@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lobster&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lobster&family=Overpass:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-image: url('imge/k1.jpg'); 
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center; 
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: top center;
+    max-width: 100%
+  }
+  header {
+    padding: 20px 0; /* Уменьшаем отступы */
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0 0;
+  font-weight: 200;
+  font-family: 'Dela Gothic One', 'sans-serif';
+}
+
+a {
+  text-decoration: none;
+  max-width: 100%
+}
+
+.active a{
+  color: rgb(107, 146, 194);
+  font-family: 'Dela Gothic One', 'sans-serif';
+  font-weight: 400;
+  width: 50%;
+  margin: 5%;
+  padding-block-end: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+.active {
+  margin-left: 3%;
+  margin-right: 3%;
+  max-width: 100%;
+  font-size: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 300px;
+}
+
+.poehali {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 100%
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  max-width: 100%
+}
+
+header {
+  padding: 50px 0;
+  max-width: max-content;
+  
+}
+
+header .logo{
+  text-transform: uppercase;
+  font-size: 300%;
+  font-weight: 800;
+  font-family: 'Dela Gothic One', 'sans-serif';
+  color: rgb(107, 146, 194);
+  padding: 0 5%;
+  width: 50vw;
+  display: flex;
+  max-width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  width: 50%; 
+  font-size: 150%;
+  color: rgb(255, 255, 255);
+  text-decoration: none; 
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo{
+  max-block-size: 100%;
+}
+
+.hero_container{
+  font-size: auto;
+  display: flex;
+  text-align:center;
+  max-width: 100%
+}
+
+.hinfo {
+  font-size: 100%;
+  font-family: 'Roboto Condensed','sans-serif';
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  font-size: auto;
+  max-width: 100%
+}
+
+header nav ul:not(.active) a:hover {
+  border-bottom: 5px solid rgb(107, 146, 194);
+  }
+
+.annotation{
+  color:white;
+  font-family: 'Roboto Condensed','sans-serif';
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  max-width: 100%;
+}
+
+.footer {
+  position: fixed; /* Делаем подвал фиксированным */
+  bottom: 0; /* Прикрепляем к нижней части страницы */
+  width: 100%; /* Занимает всю ширину экрана */
+  color: rgb(107, 146, 194); /* Синий цвет для подвала */
+  display: flex;
+  align-items: center; /* Выравниваем по вертикали */
+  flex-direction: column;
+  padding: 7% 0;
+  font-size: 100%;
+}
+
+.footer .foot { /*  Заголовок "Контакты" */
+  color: rgb(107, 146, 194); /* Синий цвет для заголовка */
+  font-family: 'cursive', 'sans-serif'; /*  Шрифт для заголовка */
+  font-weight: 400;
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  color: rgb(255, 255, 255); /*  Цвет текста в блоке "Контакты" */
+  font-family: 'cursive', 'sans-serif';
+  font-weight: 400;
+  text-align: center; /*  Выравниваем текст по центру */
+}
